@@ -1,4 +1,6 @@
 {
+  "include": ["src/**/*", ".eslintrc.json"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -25,8 +27,5 @@
       "@components/*": ["components/*"],
       "@styles/*": ["scss/*"]
     }
-  },
-  "include": [
-      "src"
-  ]
+  }
 }
