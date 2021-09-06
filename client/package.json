@@ -15,7 +15,7 @@
   "author": "Mikhai Boreysho <klevak322@gmail.com>",
   "license": "ISC",
   "browserslist": [
-    "> 0.25%, not dead"
+    "defaults"
   ],
   "bugs": {
     "url": "https://github.com/MikhailB10100/imust-notes-fullstack-app/issues"
@@ -33,10 +33,12 @@
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
+    "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
+    "cssnano": "^5.0.8",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react": "^1.1.7",
@@ -44,9 +46,12 @@
     "eslint-plugin-react": "^7.25.1",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.0.0",
+    "postcss": "^8.3.6",
+    "postcss-load-config": "^3.1.0",
+    "postcss-loader": "^6.1.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.2",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "typescript": "^4.4.2",
     "webpack": "^5.41.1",

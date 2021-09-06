@@ -23,7 +23,6 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@components': path.resolve(__dirname, 'src/components'),
-      '@styles': path.resolve(__dirname, 'src/scss'),
     },
   },
   devtool: isDev ? 'source-map' : false,
@@ -58,16 +57,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/i,
         use: [
-          isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isProd ? MiniCssExtractPlugin.loader : 'style-loader',
           'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              webpackImporter: false,
-            },
-          },
+          'postcss-loader'
         ],
       },
       {
